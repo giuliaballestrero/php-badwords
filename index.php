@@ -9,7 +9,7 @@
 <body>
 
   <main>
-    <form action="login.php" method="GET">
+    <form action="input_data.php" method="GET">
       <label for="paragraph">Inerisci la tua frase:</label>
       <input type="text" name="paragraph">
       
