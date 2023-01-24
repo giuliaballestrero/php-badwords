@@ -24,8 +24,11 @@
             $paragraph = $_GET['paragraph'];
             //creo una variabile per definire la parola da censurare
             $badWord = $_GET['badword'];
+
+            $repeat = str_repeat ('*', strlen($badWord));
+            
             //creo una variabile per sostituire la parola da censurare
-            $mutedParagraph = str_ireplace($badWord, '***', $paragraph);
+            $mutedParagraph = str_ireplace($badWord, $repeat, $paragraph);
         ?>
 
         <!--STAMPO I RISULATI-->
